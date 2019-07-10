@@ -38,6 +38,7 @@ const NavBar = () => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              <img src="/images/mobalho-logo.png" alt="Mobalho" className="nav-mobalho-logo" />
               {/* <NavItem>
                 <NavLink
                   tag={RouterNavLink}
@@ -48,6 +49,9 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </NavItem> */}
+            </Nav>
+            <Nav className="mr-auto" navbar>
+              <h5>MóPaia</h5>
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (

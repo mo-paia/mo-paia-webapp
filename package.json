@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-to-ghpages": "react-scripts build && rm -rf ../mopaia.github.io/static && cp -r build/* ../mopaia.github.io/ && cd ../mopaia.github.io && git add . && git commit -m \"App build $(date --rfc-3339=seconds)\" && git pull && git push"
   },
   "dependencies": {
     "express": "^4.16.4",
