@@ -10,7 +10,7 @@
     "build-to-ghpages": "react-scripts build && rm -rf ../mopaia.github.io/static && cp -r build/* ../mopaia.github.io/ && cd ../mopaia.github.io && git add . && git commit -m \"App build $(date --rfc-3339=seconds)\" && git pull && git push"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "morgan": "^1.9.1",
     "@auth0/auth0-spa-js": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
